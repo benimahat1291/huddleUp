@@ -18,3 +18,11 @@ a {
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
+
+.MuiInput-underline:after {
+    border-bottom: 2px solid rgb(38, 114, 126, 0.8) !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: rgb(38, 114, 126, 0.8) !important;
+}

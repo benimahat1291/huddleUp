@@ -1,10 +1,26 @@
 .todoContainer {
-    flex: 0.8;
-    width: 250px;
-    background-color: rgb(38, 114, 126, 0.2);
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
-    align-self: flex-end;
-    display: flex;
-    flex-direction: column;
+    width: 300px;
+    max-height: 69vh;
+    background-color: white;
+    box-shadow: 0px 4px 14px -3px rgba(0, 0, 0, 0.3);
+}
+
+.todoItems {
+    max-height: 55vh;
+    overflow: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.todoItems::-webkit-scrollbar {
+    display: none;
+}
+
+.textInput {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 0 10px 16px;
 }

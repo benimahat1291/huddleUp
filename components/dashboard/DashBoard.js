@@ -2,7 +2,7 @@ import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from "../../firebase";
 import styles from "../../styles/DashBoard.module.css"
 import Header from "./Header"
-import TodoList from "./TodoList";
+import TodoList from "./todolist/TodoList";
 
 
 
