@@ -1,4 +1,7 @@
 .dashBoard { 
     height: 90vh;
     flex: 0.85;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }

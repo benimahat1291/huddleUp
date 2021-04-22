@@ -5,8 +5,14 @@ import DateRangeIcon from '@material-ui/icons/DateRange';
 import FolderOpenIcon from '@material-ui/icons/FolderOpen';
 import SettingsIcon from '@material-ui/icons/Settings';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import {auth, db} from "../firebase"
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const Sidebar = () => {
+    const [user] = useAuthState(auth)
+    console.log(user)
+
+
     return (
     <container className={styles.navContainer}>
         <div className={styles.navbar}>
@@ -17,7 +23,7 @@ const Sidebar = () => {
                 <li><IconButton><FolderOpenIcon/></IconButton></li>
                 <li><IconButton><SettingsIcon/></IconButton></li>
             </ul>
-            <div className={styles.logout}><IconButton><ExitToAppIcon/></IconButton></div>
+            <div className={styles.logout}><IconButton onClick={()=> auth.signOut()}><ExitToAppIcon/></IconButton></div>
         </div>
     </container>
     )

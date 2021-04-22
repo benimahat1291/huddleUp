@@ -1,0 +1,10 @@
+.todoContainer {
+    flex: 0.8;
+    width: 250px;
+    background-color: rgb(38, 114, 126, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
