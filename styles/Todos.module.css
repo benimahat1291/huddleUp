@@ -11,6 +11,26 @@
     
 }
 
+
+.todoItemActive button {
+    visibility: hidden;
+}
+
+.todoItemActive:hover button {
+    visibility: visible;
+}
+
+.todoItemCompleted button {
+    visibility: hidden;
+}
+
+.todoItemCompleted:hover button {
+    visibility: visible;
+}
+
+
+
+
 .todoItemCompleted {
     display: flex;
     align-items: center;

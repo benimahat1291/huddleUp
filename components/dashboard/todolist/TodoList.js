@@ -73,12 +73,12 @@ const TodoList = () => {
             <div className={styles.todoItems}>
                 {
                     activeTodos.map((todo) => (
-                        <Todos todoItem={todo.todoItem} inprogress={todo.inprogress} id={todo.id} />
+                        <Todos key={todo.id} todoItem={todo.todoItem} inprogress={todo.inprogress} id={todo.id} />
                     ))
                 }
                 {
                     completedTodos.map((todo) => (
-                        <Todos todoItem={todo.todoItem} inprogress={todo.inprogress} id={todo.id} />
+                        <Todos key={todo.id} todoItem={todo.todoItem} inprogress={todo.inprogress} id={todo.id} />
                     ))
                 }
             </div>

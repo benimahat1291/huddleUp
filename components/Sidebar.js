@@ -14,7 +14,7 @@ const Sidebar = () => {
 
 
     return (
-    <container className={styles.navContainer}>
+    <div className={styles.navContainer}>
         <div className={styles.navbar}>
             <h1 className={styles.navTitle}>Huddle<span></span></h1>
             <ul className={styles.navItems}>
@@ -25,7 +25,7 @@ const Sidebar = () => {
             </ul>
             <div className={styles.logout}><IconButton onClick={()=> auth.signOut()}><ExitToAppIcon/></IconButton></div>
         </div>
-    </container>
+    </div>
     )
 }
 
