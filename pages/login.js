@@ -1,6 +1,7 @@
 import styles from "../styles/login.module.css"
 import Head from "next/head";
 import { auth, provider } from "../firebase"
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 const Login = () => {
 
@@ -16,11 +17,12 @@ const Login = () => {
                 <title>Login</title>
             </Head>
 
-            <div className={styles.loginCard}>
-                <h1 className={styles.logo}>Huddle</h1>
+            <div className={styles.wrap}>
+                <div className={styles.loginCard}>
+                    <h1 className={styles.logo}>Huddle</h1>
 
-                <button className={styles.login} onClick={signIn} variant="outlined">Login with Google</button>
-
+                    <button onClick={signIn} className={styles.button}><ExitToAppIcon className={styles.exitIcon}/></button>
+                </div>
             </div>
 
         </div>
