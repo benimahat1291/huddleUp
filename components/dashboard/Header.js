@@ -3,6 +3,7 @@ import SettingsIcon from '@material-ui/icons/Settings'
 import {Avatar, IconButton} from "@material-ui/core"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from "../../firebase"
+import Weather from "./weather/Weather"
 
 
 const Header = () => {
@@ -18,6 +19,7 @@ const Header = () => {
             </div>
 
             <div className={styles.headerIcons}>
+            <Weather/>
                 <IconButton><SettingsIcon/></IconButton>
                 <img src={user.photoURL} alt="avatar" className={styles.headerAvatar}/>
             </div>

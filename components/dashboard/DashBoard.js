@@ -12,7 +12,6 @@ const DashBoard = () => {
     return (
         <header className={styles.dashBoard}>
             <Header/>
-            <Weather/>
             <TodoList/>
 
 
