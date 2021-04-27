@@ -9,7 +9,7 @@ import Weather from "./weather/Weather"
 const Header = () => {
     const [user] = useAuthState(auth)
     const name = user.email.split("@")
-
+    console.log("user >>>>>", user)
 
     return (
         <header className={styles.header}>

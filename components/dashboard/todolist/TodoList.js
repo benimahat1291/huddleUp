@@ -40,13 +40,9 @@ const TodoList = () => {
             )
         })
     }
-    console.log("activeTodos >>>>", activeTodos);
-    console.log("completedTodos >>>>", activeTodos);
-
 
     const addTodo = (e) => {
         e.preventDefault();
-        console.log("sumbiting")
         db.collection("todos").add({
             user: user.email,
             inprogress: true,
