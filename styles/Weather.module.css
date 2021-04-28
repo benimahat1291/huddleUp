@@ -40,8 +40,15 @@
     align-items: center;
 }
 
-/* .weatherDescription {
-} */
+.weatherDescription {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weahterDescription h4 {
+    padding-top: 1rem;
+}
 
 .description h4 {
     text-transform: uppercase;
@@ -49,4 +56,27 @@
 
 .description h5 span {
     font-size: 0.9rem;
+}
+
+.forcastContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+
+}
+
+.forcastDay {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.forcastTemp {
+    font-weight: bold;
+}
+
+.forcastTemp span {
+    font-size: 0.5rem;
 }
