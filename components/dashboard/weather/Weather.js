@@ -25,6 +25,7 @@ const Weather = () => {
         }
 
     }, [])
+    
 
 
     const getPostions = () => {
