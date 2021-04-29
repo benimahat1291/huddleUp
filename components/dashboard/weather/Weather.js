@@ -1,4 +1,4 @@
-import styles from "../../../styles/Weather.module.css"
+import styles from "../../../styles/weather.module.css"
 import { useEffect, useState } from "react";
 import Clock from 'react-live-clock';
 import Time from "./Time";
