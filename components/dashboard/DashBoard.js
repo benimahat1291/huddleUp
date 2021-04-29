@@ -4,7 +4,7 @@ import styles from "../../styles/DashBoard.module.css"
 import Header from "./Header"
 import News from "./news/News";
 import TodoList from "./todolist/TodoList";
-import Weather from "./weather/Weather";
+import Weather from "./weather/WeatherApp";
 
 
 

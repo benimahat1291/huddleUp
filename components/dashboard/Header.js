@@ -3,7 +3,6 @@ import SettingsIcon from '@material-ui/icons/Settings'
 import { Avatar, IconButton } from "@material-ui/core"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { auth } from "../../firebase"
-import Weather from "./weather/Weather"
 
 
 const Header = () => {
