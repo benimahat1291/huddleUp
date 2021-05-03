@@ -1,5 +1,4 @@
 import styles from "../../../styles/weather.module.css";
-import {useState} from "react";
 
 
 const Forcast = ({ forcast }) => {
