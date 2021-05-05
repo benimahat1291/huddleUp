@@ -25,7 +25,7 @@ const Weather = () => {
         }
 
     }, [])
-    
+
 
 
     const getPostions = () => {
@@ -117,19 +117,19 @@ const Weather = () => {
     const weatherIcon = (weather, description) => {
         console.log(weather, description, iconState)
         if (iconState === null) {
-            if (weather === "Thunderstorm" || weather === "Rain" || weather === "Drizzle"){
+            if (weather === "Thunderstorm" || weather === "Rain" || weather === "Drizzle") {
                 return "RAIN"
-            } else if(weather === "Clear") {
+            } else if (weather === "Clear") {
                 return "CLEAR_DAY"
             } else if (weather === "Snow") {
                 return "SNOW"
-            } else if (weather === "Cloud" && description === "few clouds" || description === "scattered clouds") {
+            } else if (weather === "Clouds" && description === "few clouds" || description === "scattered clouds") {
                 return "PARTLY_CLOUDY_DAY"
-            } else if (weather === "Cloud" && description === "broken clouds" || description === "overcast clouds") {
+            } else if (weather === "Clouds" && description === "broken clouds" || description === "overcast clouds") {
                 return "CLOUDY"
             } else if (
-                weather === "Mist" 
-                || weather === "Smoke" 
+                weather === "Mist"
+                || weather === "Smoke"
                 || weather === "Haze"
                 || weather === "Dust"
                 || weather === "Fog"
@@ -138,11 +138,13 @@ const Weather = () => {
                 || weather === "Ash"
                 || weather === "Squall"
                 || weather === "Tornado"
-        
-                ) {
-                    return "FOG"
-                }
-            
+
+            ) {
+                return "FOG"
+            } else {
+                return "CLEAR_DAY"
+            }
+
         }
 
     }

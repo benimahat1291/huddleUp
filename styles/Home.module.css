@@ -1,8 +1,4 @@
 .app {
-    background-color: rgb(247, 241, 248);
+    background-color: gray;
     height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items:center
-
 }

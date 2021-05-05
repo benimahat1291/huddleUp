@@ -1,18 +1,21 @@
 
-.navContainer {
-    flex: 0.1;
-}
 .navbar{
-    min-width: 100px;
-    max-width: 300px;
-    height: 95vh;
+    width: 7rem;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
     background-color: rgb(38, 114, 126);
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
+
+
+
+
+
 
 .navTitle {
     font-size: 1.5rem;
@@ -41,3 +44,23 @@
 .logout button span svg{
     color: rgb(247, 241, 248, 0.5)
 }
+
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        width: 100%;
+        flex-direction: row;
+        height: 10vh;
+      }
+
+      .navItems {
+        width: 50%;
+        height: 10vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+  }
+  
+  
