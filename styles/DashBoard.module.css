@@ -1,6 +1,6 @@
 .dashBoard {
     background-color: white;
-    padding: 2vw;
+    padding: 1vw;
     position: absolute;
     top: 0;
     left: 7rem;
@@ -10,12 +10,12 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    gap: 1vw;
+    gap: 1rem;
 }
 
 .gridItem1{
     border: 1px solid black;
-    grid-column: 1/ span 6;
+    grid-column: 1/ span 7;
     grid-row: 1/ span 2;
     display: grid;
     place-items: center;
@@ -31,30 +31,30 @@
   .gridItem3 {
     border: 1px solid black;
     grid-column: 1/ span 12;
-    grid-row: 3/ span 5;
+    grid-row: 3/ span 4;
     display: grid;
     place-items: center;
   }
   .gridItem4 {
     border: 1px solid black;
     grid-column: 1 / span 4;
-    grid-row: 8/ span 6;
+    grid-row: 3/ span 5;
     display: grid;
     place-items: center;
   }
 
   .gridItem5 {
     border: 1px solid black;
-    grid-column: 5/ span 4;
-    grid-row: 8/ span 6;
+    grid-column: 1/ span 4;
+    grid-row: 3/ span 10;
     display: grid;
     place-items: center;
   }
 
   .gridItem6 {
     border: 1px solid black;
-    grid-column: 9/ span 4;
-    grid-row: 8/ span 6;
+    grid-column: 7/ span 2;
+    grid-row: 3/ span 5;
     display: grid;
     place-items: center;
   }
@@ -66,26 +66,52 @@
         left: 0;
         width: 100vw;
         height: 90vh; 
+        overflow: scroll;
     }
-    .gridItem3 {
+    .gridItem1{
         border: 1px solid black;
         grid-column: 1/ span 12;
+        grid-row: 1/ span 2;
+        display: grid;
+        place-items: center;
+      }
+      .gridItem2{
+        border: 1px solid black;
+        grid-column: 7/ span 6;
+        grid-row: 1/ span 4;
+        display: grid;
+        place-items: center;
+      }
+    
+      .gridItem3 {
+        border: 1px solid black;
+        grid-column: 1/ span 12;
+        grid-row: 3/ span 5;
+        display: grid;
+        place-items: center;
       }
       .gridItem4 {
         border: 1px solid black;
-        grid-column: 1/ span 5;
-        grid-row: 6/ span 7;
-
+        grid-column: 1 / span 4;
+        grid-row: 8/ span 6;
+        display: grid;
+        place-items: center;
       }
     
       .gridItem5 {
         border: 1px solid black;
-        grid-column: 1/ span 12;
+        grid-column: 5/ span 4;
+        grid-row: 8/ span 6;
+        display: grid;
+        place-items: center;
       }
     
       .gridItem6 {
         border: 1px solid black;
-        grid-column: 1/ span 12;
+        grid-column: 9/ span 4;
+        grid-row: 8/ span 6;
+        display: grid;
+        place-items: center;
       }
   }
   

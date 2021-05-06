@@ -20,7 +20,7 @@ useEffect(() => {
 
     return (
         <>
-            <h2>{date.toLocaleTimeString()}</h2>
+            <h4>{date.toLocaleTimeString()}</h4>
         </>
     )
 }

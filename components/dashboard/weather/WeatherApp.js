@@ -23,7 +23,6 @@ const Weather = () => {
                     getForcast(position.coords.latitude, position.coords.longitude);
                 })
         }
-
     }, [])
 
 
@@ -160,7 +159,7 @@ const Weather = () => {
             <div className={styles.imgContainer}>
                 <div className={styles.imgContainer__header}>
                     <div>
-                        <h2>{weatherData && weatherData.location}</h2>
+                        <h4>{weatherData && weatherData.location}</h4>
                         <p>{weatherData && weatherData.country}</p>
                     </div>
                     <h1 className={styles.weatherTemp}>{weatherData && weatherData.temp}&#176;<span>F</span></h1>
